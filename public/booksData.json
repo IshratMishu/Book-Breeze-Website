@@ -1,0 +1,98 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Bike Guy",
+        "author": "Emma Mayers",
+        "image": "https://i.ibb.co/rbsH0sR/the-bike.png",
+        "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+        "totalPages": 336,
+        "rating": 4.5,
+        "category": "Mystery",
+        "tags": [
+            "Suspense",
+            "Psychological"
+        ],
+        "publisher": "Celadon Books",
+        "yearOfPublishing": 2019
+    },
+    {
+        "bookId": 2,
+        "bookName": "Things We Never Got Over",
+        "author": "Lucy Score",
+        "image": "https://i.ibb.co/3TFDxyd/things-we-never-got.png",
+        "review": "A beautifully written novel that immerses you in the marshes of North Carolina.",
+        "totalPages": 384,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": [
+            "Nature",
+            "Coming of Age"
+        ],
+        "publisher": "G.P. Putnam's Sons",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 3,
+        "bookName": "Looks Good On Paper",
+        "author": "Patricia Kim",
+        "image": "https://i.ibb.co/PtV1RRz/looks-good.png",
+        "review": "A powerful memoir about resilience, education, and breaking away from a troubled past.",
+        "totalPages": 352,
+        "rating": 4.6,
+        "category": "Memoir",
+        "tags": [
+            "Inspiring",
+            "Autobiography"
+        ],
+        "publisher": "Random House",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 4,
+        "bookName": "Violet Made Of Thorns",
+        "author": "Gina Chen",
+        "image": "https://i.ibb.co/2jLRcMd/violet-made-of-thrones.png",
+        "review": "An intimate and inspiring memoir that offers a glimpse into the life of the former First Lady.",
+        "totalPages": 448,
+        "rating": 4.8,
+        "category": "Autobiography",
+        "tags": [
+            "Leadership",
+            "Inspiring"
+        ],
+        "publisher": "Crown Publishing Group",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 5,
+        "bookName": "Win-Win Strategy",
+        "author": "Frank Lafley",
+        "image": "https://i.ibb.co/J2qDQ4Y/win-win.png",
+        "review": "A magical and enchanting story set within the confines of a mysterious circus.",
+        "totalPages": 400,
+        "rating": 4.4,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Romance"
+        ],
+        "publisher": "Doubleday",
+        "yearOfPublishing": 2011
+    },
+    {
+        "bookId": 6,
+        "bookName": "The Girl Who Fell Beneath The Sea",
+        "author": "Axie OH",
+        "image": "https://i.ibb.co/gtgHjyK/girl-beneath.png",
+        "review": "A sprawling and immersive novel that explores themes of art, loss, and redemption.",
+        "totalPages": 784,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "Art",
+            "Coming of Age"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 2013
+    }
+]

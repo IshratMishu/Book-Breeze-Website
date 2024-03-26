@@ -42,8 +42,13 @@ export const saveLocalStorageWishListData = (bookDetail) =>{
 
 
 export const getBookFromLocalStorage =()=>{
-    const getDefaultBook = JSON.parse(localStorage.getItem('books')) || [];
+    const getDefaultBook = JSON.parse(localStorage.getItem('readBooks')) || [];
     return getDefaultBook;
+}
+
+export const getWishlistFromLocalStorage =()=>{
+    const getDefaultWishlist = JSON.parse(localStorage.getItem('wishlistBooks')) || [];
+    return getDefaultWishlist;
 }
 
 export default saveLocalStorageReadBookData;

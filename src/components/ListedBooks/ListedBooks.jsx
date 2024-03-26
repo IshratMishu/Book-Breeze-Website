@@ -3,18 +3,17 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineRestorePage } from "react-icons/md";
 import { HiMiniUsers } from "react-icons/hi2";
-import { getBookFromLocalStorage } from "../Utility/LocalStorage";
+import { getBookFromLocalStorage, getWishlistFromLocalStorage } from "../Utility/LocalStorage";
 import { NavLink } from "react-router-dom";
 
 
 const ListedBooks = () => {
     const [readList, setReadList] = useState([]);
-    // const [wishList, setWishList] = useState([]);
-    
+    const [wishList, setWishList] = useState([]);
     const [displayBooks, setDisplayBooks] = useState([]);
 
     const handleFilter = filter =>{
-        let sortedBooks = [...readList]; 
+        let sortedBooks = [...readList , ...wishList]; 
         if (filter === 'rating') {
             sortedBooks.sort((a, b) => b.rating - a.rating);
         } else if (filter === 'totalPages') {
@@ -26,10 +25,13 @@ const ListedBooks = () => {
     };
 
     useEffect(() => {
-        const book = getBookFromLocalStorage()
-        setReadList(book);
-        // setWishList(book);
-        setDisplayBooks(book);
+        const read = getBookFromLocalStorage();
+        const wishList = getWishlistFromLocalStorage();
+        setReadList(read);
+        const filteredWishList = wishList.filter(book => !read.some(r => r.id === book.id));
+    setWishList(filteredWishList);
+        const mergedBooks = [...read, ...filteredWishList];
+        setDisplayBooks(mergedBooks);
     }, [])
 
     return (

@@ -54,9 +54,15 @@ const BookDetails = () => {
                 <p>{bookDetail.category}</p>
                 <hr />
                 <p>Review: {bookDetail.review}</p>
-                <p>Tag 
-                    <span>{bookDetail.tags}</span>
-                </p>
+                <div className='flex gap-2 text-success'>
+                        <div>
+                            <h2>Tag</h2>
+                        </div>
+                        <div className="flex gap-2">
+                        <p>#{bookDetail.tags[0]}</p>
+                        <p>#{bookDetail.tags[1]}</p>
+                        </div>
+                    </div>
                 <hr />
                 <p>Number of Pages: {bookDetail.totalPages}</p>
                 <p>Publisher: {bookDetail.publisher}</p>

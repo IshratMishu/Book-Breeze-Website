@@ -11,9 +11,10 @@ const Book = ({ book }) => {
                     <img src={image} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    {
-                        tags.map((tag, idx) => <span key={idx}>{tag}</span>)
-                    }
+                    <div className='flex gap-2 text-success'>
+                        <p>{tags[0]}</p>
+                        <p>{tags[1]}</p>
+                    </div>
                     <h2 className="card-title">{bookName}</h2>
                     <p>By: {author}</p>
                     <hr />

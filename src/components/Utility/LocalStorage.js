@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
 
-     const saveLocalStorageReadBookData = (bookDetail) =>{
+const saveLocalStorageReadBookData = (bookDetail) => {
     const savedReadBooks = JSON.parse(localStorage.getItem('readBooks')) || [];
     const savedWishlistBooks = JSON.parse(localStorage.getItem('wishlistBooks')) || [];
 
@@ -19,11 +19,11 @@ import { toast } from "react-toastify";
         toast.success('Book Added to Read List');
     } else {
         toast.error('You have Already Read this Book');
-    }       
+    }
 };
 
 
-export const saveLocalStorageWishListData = (bookDetail) =>{
+export const saveLocalStorageWishListData = (bookDetail) => {
     const savedReadBooks = JSON.parse(localStorage.getItem('readBooks')) || [];
     const savedWishlistBooks = JSON.parse(localStorage.getItem('wishlistBooks')) || [];
 
@@ -36,17 +36,17 @@ export const saveLocalStorageWishListData = (bookDetail) =>{
         toast.success('Book Added to Wishlist');
     } else if (isReadList) {
         toast.error('You have Already Read this Book');
-    }       
+    }
 };
 
 
 
-export const getBookFromLocalStorage =()=>{
+export const getBookFromLocalStorage = () => {
     const getDefaultBook = JSON.parse(localStorage.getItem('readBooks')) || [];
     return getDefaultBook;
 }
 
-export const getWishlistFromLocalStorage =()=>{
+export const getWishlistFromLocalStorage = () => {
     const getDefaultWishlist = JSON.parse(localStorage.getItem('wishlistBooks')) || [];
     return getDefaultWishlist;
 }

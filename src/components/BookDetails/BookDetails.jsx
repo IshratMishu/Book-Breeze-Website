@@ -69,7 +69,7 @@ const BookDetails = () => {
                 <p>Year of Publishing: {bookDetail.yearOfPublishing}</p>
                 <p>Rating: {bookDetail.rating}</p>
                 <div className="card-actions">
-                    <button onClick={handleBook} className="btn ">Read</button>
+                    <button onClick={handleBook} className="btn">Read</button>
                     <button onClick={handleBook} className="btn btn-primary">Wishlist</button>
                 </div>
             </div>

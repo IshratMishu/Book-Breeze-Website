@@ -13,6 +13,12 @@ const saveLocalStorageData = (bookDetail) =>{
                 localStorage.setItem('books' , localValue);
                 toast.success('Book Added to Read List');
             }         
+};
+
+export const getBookFromLocalStorage =()=>{
+    const getDefaultBook = JSON.parse(localStorage.getItem('books')) || [];
+    return getDefaultBook;
 }
+
 
 export default saveLocalStorageData;

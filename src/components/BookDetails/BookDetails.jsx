@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import saveLocalStorageData from "../Utility/LocalStorage";
+import saveLocalStorageReadBookData, { saveLocalStorageWishListData } from "../Utility/LocalStorage";
 
 
 
@@ -9,40 +9,16 @@ const BookDetails = () => {
     const idInt = parseInt(bookId);
     const bookDetail = booksDetail.find(bookDetail => bookDetail.bookId === idInt);
 
-    // const handleRead = () =>{
-    //     const savedBook = JSON.parse(localStorage.getItem('books')) || [];
-    //     const hasBook = savedBook.find(item => item.bookId === bookDetail.bookId);
-    //     if(hasBook){
-    //         toast.error('You have Already Read this Book');
-    //     }
-    //     else{
-    //         savedBook.push(bookDetail);
-    //         const localValue = JSON.stringify(savedBook);
-    //         localStorage.setItem('books' , localValue);
-    //         toast.success('Book Added to Read List');
-    //     }
-    // }
 
-    // const handleWishList = () =>{
-    //     const savedBook = JSON.parse(localStorage.getItem('books')) || [];
-    //     const hasBook = savedBook.find(item => item.bookId === bookDetail.bookId);
-    //     if(hasBook){
-    //         toast.error('You have Already Read this Book');
-    //     }
-    //         else{
-    //             savedBook.push(bookDetail);
-    //             const localValue = JSON.stringify(savedBook);
-    //             localStorage.setItem('books' , localValue);
-    //             toast.success('Book Added to Read List');
-    //         }  
-    // }
+// Read List
+const handleRead = () => {
+    saveLocalStorageReadBookData(bookDetail);
+}
 
-
-    const handleBook= ()=>{
-        saveLocalStorageData(bookDetail);
-    }
-
-
+// Wish List
+const handleWishList = () => {
+    saveLocalStorageWishListData(bookDetail);
+}
 
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -69,8 +45,8 @@ const BookDetails = () => {
                 <p>Year of Publishing: {bookDetail.yearOfPublishing}</p>
                 <p>Rating: {bookDetail.rating}</p>
                 <div className="card-actions">
-                    <button onClick={handleBook} className="btn">Read</button>
-                    <button onClick={handleBook} className="btn btn-primary">Wishlist</button>
+                    <button onClick={()=>handleRead(bookDetail)} className="btn">Read</button>
+                    <button onClick={()=>handleWishList(bookDetail)} className="btn btn-primary">Wishlist</button>
                 </div>
             </div>
         </div>

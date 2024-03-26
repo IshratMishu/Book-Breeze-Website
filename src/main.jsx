@@ -12,6 +12,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import BookDetails from './components/BookDetails/BookDetails';
 import {ToastContainer} from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import ShapeChart from './components/ShapChart/ShapeChart';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/listed',
         element: <ListedBooks></ListedBooks>
+      },
+      {
+        path: '/read',
+        element: <ShapeChart></ShapeChart>,
       },
       {
         path: '/book/:bookId',

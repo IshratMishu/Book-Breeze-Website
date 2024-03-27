@@ -8,7 +8,7 @@ const Book = ({ book }) => {
         <Link to={`/book/${bookId}`}>
             <div className="card bg-base-100 shadow-xl font-workSans">
                 <figure className="px-10 pt-10">
-                    <img src={image} alt="Shoes" className="rounded-xl w-40 md:w-auto" />
+                    <img src={image} alt="Book" className="rounded-xl w-40 md:w-auto" />
                 </figure>
                 <div className="card-body space-y-1">
                     <div className='flex gap-2 text-[#23BE0A] font-semibold text-center'>

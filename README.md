@@ -1,6 +1,6 @@
 __Website Name:__ BookBreeze
 
-__live website url link:__ https://book-breeze-website.surge.sh/
+__Live Site URL::__ https://book-breeze-website.surge.sh/
 
 ***
 
@@ -15,4 +15,3 @@ __*Dynamic Book Details:__ Dive deeper into each book's details with comprehensi
 __*Visual Analytics with Bar Charts:__ Gain insights into book popularity and trends through visually appealing bar charts displaying metrics such as books total pages, which books you read, and more, helping users discover new and noteworthy reads.
 
 __*Exclusive Deals and Discounts:__ Access special offers, discounts, and promotions on select books, providing users with valuable savings opportunities and incentivizing book purchases.
-

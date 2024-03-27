@@ -13,6 +13,8 @@ import BookDetails from './components/BookDetails/BookDetails';
 import {ToastContainer} from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import ShapeChart from './components/ShapChart/ShapeChart';
+import Offers from './components/Offers/Offers';
+import BestSeller from './components/BestSeller/BestSeller';
 
 
 const router = createBrowserRouter([
@@ -36,7 +38,15 @@ const router = createBrowserRouter([
       {
         path: '/book/:bookId',
         element: <BookDetails></BookDetails> ,
-        loader: () => fetch('/booksData.json')
+        loader: () => fetch('/booksData.json') ,
+      },
+      {
+        path: '/offers',
+        element: <Offers></Offers>, 
+      },
+      {
+        path: '/bestseller' ,
+        element: <BestSeller></BestSeller>
       }
     ],
   },

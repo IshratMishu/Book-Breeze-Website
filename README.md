@@ -5,6 +5,7 @@ __live website url link:__ https://book-breeze-website.surge.sh/
 ***
 
 __My website features and characteristics:__
+
 __*Extensive Book Collection:__ Explore a vast collection of books spanning various genres, from classic literature to contemporary fiction, ensuring there's something for every reader's taste and interest.
 
 __*Interactive User Experience:__ Enjoy an interactive browsing experience with user-friendly navigation, allowing users to easily search, filter, and sort books based on criteria such as author, publication year, and more.

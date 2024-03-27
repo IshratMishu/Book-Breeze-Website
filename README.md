@@ -1,8 +1,8 @@
-https://book-breeze-website.surge.sh/
-BookBreeze
+__Website Name: BookBreeze__ 
 
+live website url link: https://book-breeze-website.surge.sh/
 
-
+My website features and characteristics:
 *Extensive Book Collection: Explore a vast collection of books spanning various genres, from classic literature to contemporary fiction, ensuring there's something for every reader's taste and interest.
 
 *Interactive User Experience: Enjoy an interactive browsing experience with user-friendly navigation, allowing users to easily search, filter, and sort books based on criteria such as author, publication year, and more.

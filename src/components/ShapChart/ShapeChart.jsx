@@ -26,7 +26,7 @@ const ShapeChart = () => {
     };
 
     return (
-        <div>
+        <div style={{ maxWidth: '100%', overflowX: 'auto' }}>
             <BarChart
             width={1100}
             height={300}

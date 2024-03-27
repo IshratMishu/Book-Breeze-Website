@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="p-10 bg-neutral text-neutral-content mt-20">
+        <footer className="p-10 bg-neutral text-white mt-20 font-workSans">
            <div className="footer flex justify-between max-w-6xl mx-auto">
            <aside>
                 <h2>BookBreeze</h2>

@@ -8,5 +8,5 @@ BookBreeze
 
 *Visual Analytics with Bar Charts: Gain insights into book popularity and trends through visually appealing bar charts displaying metrics such as books total pages, which books you read, and more, helping users discover new and noteworthy reads.
 
-*Personalized Recommendations: Receive personalized book recommendations based on browsing history, preferences, and reading habits, enhancing the discovery process and facilitating tailored book suggestions for users, ultimately enhancing their overall satisfaction and engagement with the website.
+*Exclusive Deals and Discounts: Access special offers, discounts, and promotions on select books, providing users with valuable savings opportunities and incentivizing book purchases.
 
